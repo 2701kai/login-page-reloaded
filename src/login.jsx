@@ -9,7 +9,7 @@ export default function Login() {
       <div className="portal-effect" />
       <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 relative">
         {/* <h1 className="mt-2em animate-bounce-alt animation-duration-2s fw-400 op30"> */}
-        <h1 className="mt-2em text animate-bounce-alt animate-duration-2s">
+        <h1 className="mt-2em text animate-bounce-alt animate-duration-2s static-hover">
           Hi!
         </h1>
         <h2 className="op80 text-md">Oder Tach.</h2>
@@ -28,7 +28,9 @@ export default function Login() {
           className="p-2 m-2 border border-white bg-black text-white rounded"
         />
         {/* <button className="btn animate-bounce-alt animate-count-infinite"> */}
-        <button className="btn-kai shake-it op30 hover:op100">3, 2, 1..</button>
+        <button className="btn-kai hover:animate-none shake-it hover:shake-it-none op30 hover:op100">
+          3, 2, 1..
+        </button>
       </div>
     </>
   );
