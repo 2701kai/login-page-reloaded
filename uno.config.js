@@ -15,4 +15,22 @@ export default defineConfig({
     ],
     ["pause-on-hover", "group-hover:animate-paused"],
   ],
+  theme: {
+    theme: {
+      extend: {
+        keyframes: {
+          fadein: {
+            from: { opacity: "0" },
+            to: { opacity: "1" },
+          },
+        },
+        animation: {
+          "fade-in-slow": "fadein 3s ease-out forwards",
+          "pulse-slow": "pulse 4s ease-in-out infinite",
+          "hal-awaken":
+            "fadein 3s ease-out forwards, pulse 4s ease-in-out infinite",
+        },
+      },
+    },
+  },
 });

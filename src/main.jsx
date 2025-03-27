@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 // import "./index.css";
-// import "uno.css";
+import "uno.css";
 import "./uno-playground.css";
 import "virtual:uno.css";
 

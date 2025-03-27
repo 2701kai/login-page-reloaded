@@ -18,16 +18,16 @@ export default function Login() {
       </div>
 
       {/*Logo Container*/}
-      <div className="logo relative flex flex-col items-center justify-center justify-start text-center z-10 pt-48">
+      <div className="relative min-h-screen flex flex-col items-center justify-center text-center z-10 mt-48">
         {/* HAL 9000 */}
         <img
           src="/hal.webp"
           alt="HAL 9000"
-          className="absolute top-50 w-40 h-40 object-contain rounded-full ring-8 ring-red-500 shadow-xl shadow-red-900 bg-black animate-pulse-slow opacity-50 animate-fade-in-slow animate-pulse-slow"
+          className="absolute top-12 w-40 h-40 rounded-full ring-1 ring-red-500 bg-black shadow-[0_0_30px_#ff0000] animate-fade-in-slow opacity-50 animate-pulse-slow"
         ></img>
 
         {/* Login form */}
-        <div className="group flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 mt-8 relative">
+        <div className="group flex flex-col items-center justify-center text-center space-y-4 z-10 mt-8 relative">
           <h1 className="mt-2em text animate-bounce-alt animate-duration-2s pause-on-hover">
             Hi!
           </h1>
