@@ -7,9 +7,9 @@ export default function Login() {
   return (
     <>
       <div className="portal-effect" />
-      <div className="flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 relative">
+      <div className="group flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 relative">
         {/* <h1 className="mt-2em animate-bounce-alt animation-duration-2s fw-400 op30"> */}
-        <h1 className="mt-2em text animate-bounce-alt animate-duration-2s static-hover">
+        <h1 className="mt-2em text animate-bounce-alt animate-duration-2s pause-on-hover">
           Hi!
         </h1>
         <h2 className="op80 text-md">Oder Tach.</h2>
