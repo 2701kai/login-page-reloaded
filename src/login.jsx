@@ -7,6 +7,15 @@ export default function Login() {
   return (
     <>
       <div className="portal-effect" />
+      <div m2="" flex="" justify-center="" text-2xl="" op30="" hover="op80">
+        <a
+          i-carbon-logo-github=""
+          text-inherit=""
+          href="https://github.com/2701kai/login-page/blob/main/README.md"
+          target="_blank"
+          aria-label="GitHub repository of the project"
+        ></a>
+      </div>
       <div className="group flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 relative">
         {/* <h1 className="mt-2em animate-bounce-alt animation-duration-2s fw-400 op30"> */}
         <h1 className="mt-2em text animate-bounce-alt animate-duration-2s pause-on-hover">
