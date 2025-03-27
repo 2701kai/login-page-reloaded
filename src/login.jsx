@@ -14,12 +14,14 @@ export default function Login() {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             />
+            <br />
             <input
                 type="password"
                 placeholder="..und Passwort."
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
+            <br />
             <button>3, 2, 1..</button>
         </div>
         );
