@@ -16,7 +16,19 @@ export default function Login() {
           aria-label="GitHub repository of the project"
         ></a>
       </div>
-      <div className="group flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 relative">
+
+      <div className="relative min-h-screen flex flex-col items-center justify-start text-center z-10 pt-48 ">
+        {/* HAL 9000 */}
+        <img
+          src="/hal.webp"
+          alt="HAL 9000"
+          className="absolute top-50 w-40 h-40 object-contain animate-pulse-slow opacity-80 rounded-full shadow-lg bg-red-900"
+          //   className="absolute top-10 w-40 h-40 object-contain rounded-full ring-8 ring-red-500 shadow-xl shadow-red-900 bg-black opacity-5 animate-fade-in-slow animate-pulse-slow"
+        ></img>
+      </div>
+
+      {/* Login form */}
+      <div className="group flex flex-col items-center justify-center min-h-screen text-center space-y-4 z-10 mt-8 relative">
         {/* <h1 className="mt-2em animate-bounce-alt animation-duration-2s fw-400 op30"> */}
         <h1 className="mt-2em text animate-bounce-alt animate-duration-2s pause-on-hover">
           Hi!
