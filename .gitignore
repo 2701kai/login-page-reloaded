@@ -28,3 +28,4 @@ _react*
 .env
 .vscode
 .DS_Store
+.env
