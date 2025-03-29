@@ -1,0 +1,21 @@
+{
+  "name": "johanna_rocks",
+  "version": "1.0.0",
+  "description": ">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2701kai/girl-s_day_rocks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2701kai/girl-s_day_rocks/issues"
+  },
+  "homepage": "https://github.com/2701kai/girl-s_day_rocks#readme"
+}

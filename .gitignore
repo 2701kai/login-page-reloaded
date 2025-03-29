@@ -25,3 +25,6 @@ dist-ssr
 
 # mine
 _react*
+.env
+.vscode
+.DS_Store

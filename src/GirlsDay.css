@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.girls-day-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f0f0f;
+  color: #dcdcdc;
+  position: relative;
+  overflow: hidden;
+  font-family: "InterDisplay", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  .girls-day-container {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0f0f0f;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-family: "InterDisplay", sans-serif;
+  font-weight: 700;
+  color: #ff4a11;
+  margin: 20px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 7em;
+  opacity: 0.6;
+  margin-top: 1em;
+}
+
+.aenne {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 14px 16px;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.14em;
+  display: inline-block;
+  font-size: 1.6em;
+  padding-inline: 50px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  background-color: #ff4a11;
+  white-space: pre-line;
+}
+
+.btn:hover {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: #e5430f;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.minions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.minions img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.hint {
+  margin-top: 1rem;
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+}
+
+.hint.fade-out {
+  opacity: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.shake-it {
+  animation: shake 0.4s;
+  animation-iteration-count: infinite;
+}
+
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9998;
+  pointer-events: none;
+  background-color: transparent;
+  mix-blend-mode: screen;
+}
+
+.chaos-minion {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+kbd {
+  background-color: #333;
+  border-radius: 3px;
+  border: 1px solid #666;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  margin: 0 0.2em;
+}
+
+@media (max-width: 768px) {
+  .minions img {
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+}

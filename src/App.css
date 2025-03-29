@@ -1,8 +1,15 @@
+/* Global styles for all routes */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -67,3 +74,18 @@
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 */
+
+/* Ensure all route containers take full height */
+.welcome-container,
+.girls-day-container,
+.dashboard-container,
+.und-jetzt-container,
+.login-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}

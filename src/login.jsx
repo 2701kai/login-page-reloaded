@@ -1,8 +1,44 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+    setLoading(true);
+
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Login failed");
+      }
+
+      // Store the token
+      localStorage.setItem("token", data.token);
+
+      // Redirect to dashboard
+      navigate("/dashboard");
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -27,17 +63,22 @@ export default function Login() {
         ></img>
 
         {/* Login form */}
-        <div className="group flex flex-col items-center justify-center text-center space-y-4 z-10 mt-8 relative">
+        <form
+          onSubmit={handleSubmit}
+          className="group flex flex-col items-center justify-center text-center space-y-4 z-10 mt-8 relative"
+        >
           <h1 className="mt-2em text animate-bounce-alt animate-duration-2s pause-on-hover">
             Hi!
           </h1>
           <h2 className="op80 text-md">Oder Tach.</h2>
+          {error && <div className="text-red-500 text-sm">{error}</div>}
           <input
             type="text"
             placeholder="Dings, äh, sag schnell.."
             value={username}
             onChange={(e) => setUsername(e.target.value)}
             className="p-2 m-2 border border-white bg-black text-white rounded"
+            required
           />
           <input
             type="password"
@@ -45,11 +86,16 @@ export default function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="p-2 m-2 border border-white bg-black text-white rounded"
+            required
           />
-          <button className="btn-kai hover:animate-none shake-it hover:shake-it-none op30 hover:op100">
-            3, 2, 1..
+          <button
+            type="submit"
+            disabled={loading}
+            className="btn-kai hover:animate-none shake-it hover:shake-it-none op30 hover:op100 disabled:opacity-50"
+          >
+            {loading ? "Loading..." : "3, 2, 1.."}
           </button>
-        </div>
+        </form>
       </div>
     </>
   );

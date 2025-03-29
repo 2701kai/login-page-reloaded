@@ -69,3 +69,11 @@ export default defineConfig({
 > #### more: [UnoCSS](https://unocss.dev/integrations/vite)
 
 ---
+
+## Update:
+
+created reloaded version full MERN, then
+
+```bash
+gh repo create login-page-reloaded --public --source=. --remote=origin --push
+```

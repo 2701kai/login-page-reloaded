@@ -1,0 +1,118 @@
+.und-jetzt-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  isolation: isolate;
+}
+
+.und-jetzt-container h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  animation: sink-down 1.5s ease-out forwards;
+  transform: translateY(-100vh);
+  opacity: 0;
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+.und-jetzt-container h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  opacity: 1;
+}
+
+.typewriter {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #ff4a11;
+  width: 0;
+  animation: typing 2.5s steps(40, end) 1.5s forwards,
+    blink-caret 0.75s step-end infinite;
+  will-change: width;
+  backface-visibility: hidden;
+}
+
+.typewriter span {
+  display: inline-block;
+  width: 0;
+  animation: typing 2.5s steps(40, end) 1.5s forwards;
+  will-change: width;
+  backface-visibility: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #ff4a11;
+  }
+}
+
+.content {
+  opacity: 1;
+  will-change: opacity;
+  backface-visibility: hidden;
+}
+
+.btn-kai {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  opacity: 0;
+  animation: fade-in 0.5s ease-in-out 4s forwards;
+}
+
+.btn-kai:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+@keyframes sink-down {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
