@@ -8,13 +8,16 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  // 👇 Use the environment variable
+  const API_URL = import.meta.env.VITE_API_URL;
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/auth/login", {
+      const response = await fetch(`${API_URL}/api/auth/login`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,10 +31,7 @@ export default function Login() {
         throw new Error(data.message || "Login failed");
       }
 
-      // Store the token
       localStorage.setItem("token", data.token);
-
-      // Redirect to dashboard
       navigate("/dashboard");
     } catch (err) {
       setError(err.message);
@@ -53,16 +53,13 @@ export default function Login() {
         ></a>
       </div>
 
-      {/*Logo Container*/}
       <div className="relative min-h-screen flex flex-col items-center justify-center text-center z-10 mt-48">
-        {/* HAL 9000 */}
         <img
           src="/hal.webp"
           alt="HAL 9000"
           className="absolute top-12 w-40 h-40 rounded-full ring-1 ring-red-500 bg-black shadow-[0_0_30px_#ff0000] animate-fade-in-slow opacity-50 animate-pulse-slow"
-        ></img>
+        />
 
-        {/* Login form */}
         <form
           onSubmit={handleSubmit}
           className="group flex flex-col items-center justify-center text-center space-y-4 z-10 mt-8 relative"
@@ -72,6 +69,7 @@ export default function Login() {
           </h1>
           <h2 className="op80 text-md">Oder Tach.</h2>
           {error && <div className="text-red-500 text-sm">{error}</div>}
+
           <input
             type="text"
             placeholder="Dings, äh, sag schnell.."
