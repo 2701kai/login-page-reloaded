@@ -1,4 +1,15 @@
 {
   "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; connect-src 'self' https://login-page-reloaded.onrender.com"
+        }
+      ]
+    }
+  ]
 }
