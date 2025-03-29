@@ -77,3 +77,31 @@ created reloaded version full MERN, then
 ```bash
 gh repo create login-page-reloaded --public --source=. --remote=origin --push
 ```
+
+years later.. n still annoying CSP
+
+### fonts working:
+
+![alt text](image.png)
+
+### login still failing vercel / onrender:
+
+![alt text](image-1.png)
+
+### dev tools:
+
+```json
+
+
+fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ username: "testuser", password: "test123" }),
+})
+  .then((res) => {
+    console.log("Status:", res.status);
+    return res.text();
+  })
+  .then(console.log)
+  .catch(console.error);
+```

@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-// 👇 Use the environment variable
-const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -9,6 +7,8 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -24,16 +24,25 @@ export default function Login() {
         body: JSON.stringify({ username, password }),
       });
 
-      const data = await response.json();
+      const contentType = response.headers.get("content-type");
+      const isJson = contentType && contentType.includes("application/json");
+      const data = isJson ? await response.json() : null;
 
       if (!response.ok) {
-        throw new Error(data.message || "Login failed");
+        throw new Error(
+          data?.message || `Login failed (status ${response.status})`
+        );
       }
 
-      localStorage.setItem("token", data.token);
-      navigate("/dashboard");
+      if (data?.token) {
+        localStorage.setItem("token", data.token);
+        navigate("/dashboard");
+      } else {
+        throw new Error("No token received from server.");
+      }
     } catch (err) {
-      setError(err.message);
+      console.error("Login error:", err);
+      setError(err.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
