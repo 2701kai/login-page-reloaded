@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+// 👇 Use the environment variable
+const API_URL = import.meta.env.VITE_API_URL;
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -7,9 +9,6 @@ export default function Login() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
-
-  // 👇 Use the environment variable
-  const API_URL = import.meta.env.VITE_API_URL;
 
   const handleSubmit = async (e) => {
     e.preventDefault();

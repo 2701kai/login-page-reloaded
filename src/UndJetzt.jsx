@@ -9,7 +9,12 @@ export default function UndJetzt() {
     const cleanup = () => {
       const canvases = document.querySelectorAll("canvas");
       canvases.forEach((canvas) => canvas.remove());
-      document.body.classList.remove("shake-it", "confetti-container");
+      // maybe the culprit inhibiting login vercel?
+      // document.body.classList.remove("shake-it", "confetti-container");
+      if (typeof document !== "undefined" && document.body) {
+        document.body.classList.remove("shake-it", "confetti-container");
+      }
+
       const chaosMinions = document.querySelectorAll(".chaos-minion");
       chaosMinions.forEach((minion) => minion.remove());
       const highestIntervalId = window.setInterval(() => {}, 0);
