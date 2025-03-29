@@ -7,7 +7,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; style-src 'self' 'unsafe-inline' https://rsms.me; connect-src 'self' https://login-page-reloaded.onrender.com; img-src 'self' data:; worker-src 'self' blob:;"
+          "value": "default-src 'self'; style-src 'self' 'unsafe-inline' https://rsms.me; font-src 'self' https://rsms.me; connect-src 'self' https://login-page-reloaded.onrender.com; img-src 'self' data:; worker-src 'self' blob:;"
         }
       ]
     }
