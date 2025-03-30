@@ -1,14 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import confetti from "canvas-confetti";
 import "./Dashboard.css";
 
 export default function Dashboard() {
   const navigate = useNavigate();
+  const hasFiredRef = useRef(false);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
       navigate("/");
+    } else if (!hasFiredRef.current) {
+      confetti({
+        particleCount: 120,
+        spread: 100,
+        origin: { y: 0.6 },
+      });
+      hasFiredRef.current = true;
     }
   }, [navigate]);
 
@@ -23,8 +32,8 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
-      <h1 className="text-4xl mb-8">Welcome to the Dashboard!</h1>
-      <p className="mb-8">You've successfully logged in.</p>
+      <h1 className="text-6xl mb-8">Welcome to the Dashboard!</h1>
+      <p className="mb-10">You've successfully logged in.</p>
       <div className="button-container">
         <button className="btn-kai btn-kai-large" onClick={handleTrauDich}>
           Trau Dich!

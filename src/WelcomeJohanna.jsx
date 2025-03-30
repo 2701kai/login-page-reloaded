@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import confetti from "canvas-confetti";
+// import confetti from "canvas-confetti";
 import "./WelcomeJohanna.css";
 
 export default function WelcomeJohanna() {

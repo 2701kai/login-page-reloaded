@@ -11,14 +11,49 @@ export default function Login() {
   const helloAudio = useRef(null);
   const errorAudio = useRef(null);
 
+  const halEyeRef = useRef(null);
+
   const API_URL = import.meta.env.VITE_API_URL;
 
+  // useEffect(() => {
+  //   const onFirstInteraction = () => {
+  //     helloAudio.current?.play().catch((e) => {
+  //       console.warn("Autoplay failed:", e);
+  //     });
+  //     window.removeEventListener("click", onFirstInteraction);
+  //     window.removeEventListener("keydown", onFirstInteraction);
+  //   };
+
   useEffect(() => {
-    if (helloAudio.current) {
-      helloAudio.current.play().catch((e) => {
-        console.warn("Autoplay prevented:", e);
-      });
-    }
+    const onFirstInteraction = () => {
+      const audio = helloAudio.current;
+      const eye = halEyeRef.current;
+
+      if (audio && eye) {
+        // Activate glow
+        eye.classList.remove("hal-muted");
+        eye.classList.add("hal-glow");
+
+        audio.play().catch((e) => console.warn("Autoplay failed:", e));
+
+        audio.onended = () => {
+          // Revert to muted glow
+          eye.classList.remove("hal-glow");
+          eye.classList.add("hal-muted");
+        };
+      }
+
+      window.removeEventListener("click", onFirstInteraction);
+      window.removeEventListener("keydown", onFirstInteraction);
+    };
+
+    window.addEventListener("click", onFirstInteraction);
+    window.addEventListener("keydown", onFirstInteraction);
+
+    return () => {
+      window.removeEventListener("click", onFirstInteraction);
+      window.removeEventListener("keydown", onFirstInteraction);
+    };
   }, []);
 
   const handleSubmit = async (e) => {
@@ -68,7 +103,7 @@ export default function Login() {
   return (
     <>
       {/* AUDIO ELEMENTS */}
-      <audio ref={helloAudio} src="/audio/helloDave.mp3" preload="auto" />
+      <audio ref={helloAudio} src="/audio/helloDaveLeiser.mp3" preload="auto" />
       <audio
         ref={errorAudio}
         src="/audio/hal9000CantDoShort.mp3"
@@ -80,7 +115,7 @@ export default function Login() {
         <a
           i-carbon-logo-github=""
           text-inherit=""
-          href="https://github.com/2701kai/login-page/blob/main/README.md"
+          href="https://github.com/2701kai/login-page-reloaded/blob/main/README.md"
           target="_blank"
           aria-label="GitHub repository of the project"
         ></a>
@@ -90,7 +125,21 @@ export default function Login() {
         <img
           src="/hal.webp"
           alt="HAL 9000"
-          className="absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-1 ring-red-500 bg-black shadow-[0_0_30px_#ff0000] animate-fade-in-slow opacity-50 animate-pulse-slow"
+          //   className="absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-1 ring-red-500 bg-black shadow-[0_0_30px_#ff0000] animate-fade-in-slow opacity-50 animate-pulse-slow"
+          // />
+
+          //   className="absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full
+          // ring-2 ring-red-600 bg-black
+          // shadow-[0_0_40px_#ff0000,0_0_60px_#ff0000]
+          // animate-pulse opacity-0 transition-all duration-1000"
+          // />
+
+          //   className="hal-glow absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-2 ring-red-700 bg-black"
+          // />
+
+          ref={halEyeRef}
+          // className="hal-glow absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-2 ring-red-700 bg-black"
+          className="hal-muted absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-2 ring-red-700 bg-black transition-all duration-300"
         />
 
         <form

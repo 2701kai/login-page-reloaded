@@ -89,3 +89,35 @@ body {
   justify-content: center;
   overflow: hidden;
 }
+
+/* @keyframes halPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 40px #ff0000, 0 0 80px #ff0000;
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 80px #ff1a1a, 0 0 160px #ff1a1a;
+    opacity: 1;
+  }
+}
+
+.hal-glow {
+  animation: halPulse 2.5s infinite ease-in-out;
+} */
+
+@keyframes halPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 40px #ff0000, 0 0 80px #ff0000;
+    opacity: 0.8;
+  }
+  50% {
+    box-shadow: 0 0 80px #ff1a1a, 0 0 160px #ff1a1a;
+    opacity: 1;
+  }
+}
+
+.hal-glow {
+  animation: halPulse 2.5s infinite ease-in-out;
+}
