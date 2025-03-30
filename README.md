@@ -126,4 +126,10 @@ Whatever. Back to topic: Bug Fixing.Also see
 
 - checked codebase for redundant files, typos, broken links, misconfigured routes both to render & vercel
 - assigned both BE and FE to Node v.20 (LTE)
--
+- after `git add . && ...` chgd data both on render and vercel, redeployed last commit without cache and...
+
+## [BOOM! @vercel](https://lpr2.vercel.app)
+
+> well, that was easy..
+
+moving on to CSS

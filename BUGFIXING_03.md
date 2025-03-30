@@ -45,3 +45,21 @@ It does. So Backend on Render works, as it returns [JWT](https://auth0.com/learn
 ### 3. what about .env on reder / vercel?
 
 gotcha: corrected misconfigured `VITE_API_URL`.
+
+### 4. back to square one: nvm use 22.14.0
+
+then the usual `git add . && ..`
+
+### 5. Redeployment to Render
+
+works fine, token returned with
+
+```bash
+curl -X POST https://login-page-reloaded.onrender.com/api/auth/login \
+  -H "Content-Type: application/json" \
+  -d '{"username": "testuser", "password": "test123"}'
+```
+
+### 6. Redeployment to Vercel
+
+..and **_BOOM!_**, everything works.
