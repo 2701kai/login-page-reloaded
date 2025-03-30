@@ -1,5 +1,7 @@
 # Login-Page-Reloaded v.2.8.99: go full MERN 🤖
 
+> history: see **[girl´s day rocks](https://github.com/2701kai/girl-s_day_rocks)** and **[login-page](https://github.com/2701kai/login-page)**
+
 ## 1st attempt on react..
 
 ### steps so far:
