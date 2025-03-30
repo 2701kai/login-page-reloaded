@@ -141,3 +141,11 @@ moving on:
 ## CSS Refactoring
 
 ### more Details: see **[CSS](./05_CSS.md)**
+
+---
+
+## _Coming up: customized GPT for the elderly_
+
+![alt text](image-2.png)
+
+### deployed **[@vercel](https://hanne-gpt.vercel.app/)**
