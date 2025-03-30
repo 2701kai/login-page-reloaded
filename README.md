@@ -1,4 +1,4 @@
-# login-page
+# Login-Page-Reloaded v.2.8.99: go full MERN 🤖
 
 ## 1st attempt on react..
 
@@ -105,3 +105,25 @@ fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
   .then(console.log)
   .catch(console.error);
 ```
+
+---
+
+## Groundhog Day #4.156\* - Today´s Goal: Solve Discrepancies
+
+> _\*it´s the 3rd, actually.._
+
+#### _i.e. the discrepancies between DEV working locally / PROD failing on render/vercel_
+
+> _Yaaaay, that´s the spirit, little bonobo, goooooo!!!_
+>
+> _Quite the mandatory hubris one needs to become a prolific webDepp eventually, the ambitious zeal of a testosterone infested silverback mountain gorilla striving relentlessly for getting the golden banana for refactoring QED so brilliantly even Feynma would blush enviosly, vulgo: aiming to be a 🤖 no matter what. As you do.. being the apparent Cro-Mag i am, purely by phenotype._
+>
+> _Well, might be implicitly disconcertingly unhinged. But rather cute, indeed.. so PROCEED, quitters never win, to cite the famously brilliant philosopher of our time, of course, Vince Lombardi._
+
+Whatever. Back to topic: Bug Fixing.Also see
+
+### **[BUGFIXING](./BUGFIXING_03.md)**.
+
+- checked codebase for redundant files, typos, broken links, misconfigured routes both to render & vercel
+- assigned both BE and FE to Node v.20 (LTE)
+-
