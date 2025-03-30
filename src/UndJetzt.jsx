@@ -74,10 +74,10 @@ export default function UndJetzt() {
             // neu im Sortiment
             onClick={(e) => {
               e.preventDefault(); // delayed nav for fade effect...
-              fadeOutAudio(plexicoRef.current, 4000);
+              fadeOutAudio(plexicoRef.current, 400);
               setTimeout(() => {
                 window.location.href = "https://github.com/CagatayWT";
-              }, 4000);
+              }, 400);
             }}
           >
             Dann los!

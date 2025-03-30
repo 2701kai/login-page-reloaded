@@ -364,7 +364,7 @@ export default function Banana() {
       // Navigate to /und-jetzt after 10 seconds
       setTimeout(() => {
         navigate("/und-jetzt");
-      }, 10000);
+      }, 4000);
     }
   };
 
