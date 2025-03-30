@@ -90,6 +90,16 @@ body {
   overflow: hidden;
 }
 
+.hal-muted {
+  opacity: 0.3;
+  box-shadow: 0 0 10px #330000;
+  transition: all 0.3s ease-in-out;
+}
+.hal-glow {
+  box-shadow: 0 0 60px #ff0000;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
 /* @keyframes halPulse {
   0%,
   100% {

@@ -139,17 +139,17 @@ export default function Login() {
 
           ref={halEyeRef}
           // className="hal-glow absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-2 ring-red-700 bg-black"
-          className="hal-muted absolute top-12 md:top-20 w-32 md:w-40 h-32 md:h-40 rounded-full ring-2 ring-red-700 bg-black transition-all duration-300"
+          className="hal-muted absolute top-36 md:top-20 w-64 md:w-40 h-64 md:h-40 rounded-full ring-2 ring-red-700 bg-black transition-all duration-300"
         />
 
         <form
           onSubmit={handleSubmit}
           className="group flex flex-col items-center justify-center text-center space-y-4 z-10 mt-8 w-full max-w-xs sm:max-w-sm md:max-w-md"
         >
-          <h1 className="text-xl sm:text-2xl animate-bounce-alt animate-duration-2s pause-on-hover">
+          <h1 className="text-5xl sm:text-2xl animate-bounce-alt animate-duration-2s pause-on-hover">
             Hi!
           </h1>
-          <h2 className="opacity-80 text-sm sm:text-md">Oder Tach.</h2>
+          <h2 className="text-2xl opacity-80 text-sm sm:text-md">Oder Tach.</h2>
 
           {error && <div className="text-red-500 text-sm">{error}</div>}
 
