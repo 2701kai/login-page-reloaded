@@ -132,4 +132,12 @@ Whatever. Back to topic: Bug Fixing.Also see
 
 > well, that was easy..
 
-moving on to CSS
+moving on:
+
+## GH Actions
+
+### more Details: see **[GH Actions](./04_GH_Actions.md)**
+
+## CSS Refactoring
+
+### more Details: see **[CSS](./05_CSS.md)**
