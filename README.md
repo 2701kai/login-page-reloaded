@@ -140,8 +140,7 @@ fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
 
 > _Yaaaay, that´s the spirit, little bonobo, goooooo!!!_
 >
-> _Quite the mandatory hubris-determined attitude one needs to become a prolific webDepp eventually, the ambitious zeal of a testosterone infested silverback mountain gorilla striving relentlessly for getting the golden banana for refactoring QED so brilliantly even [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter) would blush enviosly, vulgo: aiming to be a 🤖 no matter what. As you do.. being the apparent Cro-Mag i am, purely by phenotype._
->
+> _Quite the mandatory, hubris-fueled attitude one must adopt to eventually become a prolific webDepp - the ambitious zeal of a testosterone-infused silverback mountain gorilla, relentlessly striving to grasp the golden banana for refactoring QED so brilliantly that even  [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter) himself would blush enviously. Vulgo: aiming to become a bot no matter what. As you do. Being the apparent Cro-Mag that I am - purely by phenotype.
 > _Well, might be implicitly disconcertingly unhinged. But rather cute, indeed.. so PROCEED, quitters never win, to cite the famously brilliant philosopher of our time, of course, Vince Lombardi._
 
 Whatever. Back to topic: Bug Fixing.Also see
