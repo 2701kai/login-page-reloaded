@@ -42,7 +42,7 @@ fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
 
 It does. So Backend on Render works, as it returns [JWT](https://auth0.com/learn/json-web-tokens).
 
-### 3. what about .env on reder / vercel?
+### 3. what about .env on render / vercel?
 
 gotcha: corrected misconfigured `VITE_API_URL`.
 
