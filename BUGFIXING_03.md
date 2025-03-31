@@ -1,6 +1,6 @@
 # Another Day in Paradise
 
-> Rise and shine, little 🤖, it´s bug fixing day!
+> _Rise and shine, little 🤖, it´s bug fixing day!_
 
 ## Backend tests
 
