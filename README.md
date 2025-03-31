@@ -180,4 +180,4 @@ moving on:
 
 #### link to `this.Readme`@vercel:
 
-[/about](https://lpr2/about)
+[/about](https://lpr2.vercel.app/about)
