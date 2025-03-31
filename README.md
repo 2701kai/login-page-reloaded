@@ -10,6 +10,20 @@
 
 ![alt text](image-4.png)
 
+---
+
+## Credits:
+
+> Thank you very much indeed for your never-ending patience, inspiration, and support — also for the blood, sweat, and tears, the reality checks, and, above all, for all the unfiltered joy, shared laughter, and sheer delight I was lucky enough to experience with and thanks to you.
+
+- ### [wonderClass](https://github.com/FbW-WD-24-D08)
+- ### <a href="https://lpr2.vercel.app/credits" target="_blank">Markus</a>
+
+## Tools used:
+
+- ### [Gimp](https://www.gimp.org/)
+- ### [Audacity](https://www.audacityteam.org/)
+
 ### steps so far:
 
 ```bash
