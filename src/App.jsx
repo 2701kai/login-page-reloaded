@@ -5,6 +5,8 @@ import GirlsDay from "./GirlsDay";
 import Dashboard from "./Dashboard";
 import Banana from "./Banana";
 import UndJetzt from "./UndJetzt";
+import AboutPage from "./components/AboutPage";
+
 import MarkdownWithAudioAndImage from "./components/MarkdownWithAudioAndImage";
 
 import "./App.css";
@@ -20,6 +22,7 @@ function App() {
         <Route path="/banana" element={<Banana />} />
         <Route path="/und-jetzt" element={<UndJetzt />} />
         <Route path="/credits" element={<MarkdownWithAudioAndImage />} />;
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   );

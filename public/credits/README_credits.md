@@ -13,3 +13,9 @@
 [Markus](404.png)
 
 ### deshalb.. [hal](./hal9000CantDoLong.mp3)
+
+<br />
+
+<Link to="/about" className="text-cyan-400 hover:underline">
+  About this project
+</Link>

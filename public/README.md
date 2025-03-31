@@ -177,7 +177,3 @@ moving on:
 ### Epilogue..
 
 ![alt text](image-3.png)
-
-#### link to `this.Readme`@vercel:
-
-[/about](https://lpr2/about)
