@@ -16,8 +16,13 @@
 
 > Thank you very much indeed for your never-ending patience, inspiration, and support — also for the blood, sweat, and tears, the reality checks, and, above all, for all the unfiltered joy, shared laughter, and sheer delight I was lucky enough to experience with and thanks to you.
 
+- ### [CagatayWT](https://github.com/CagatayWT)
+
 - ### [wonderClass](https://github.com/FbW-WD-24-D08)
-- ### <a href="https://lpr2.vercel.app/credits" target="_blank">Markus</a>
+
+> _..maybe_ **[`askTeacherFirst`](https://lpr2.vercel.app/credits)** _before embarrassing him.._
+
+- ### <a href="https://shonkxs.dev" target="_blank">Markus (@shonkxs.dev)</a>
 
 ## Tools used:
 
@@ -140,7 +145,7 @@ fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
 
 > _Yaaaay, that´s the spirit, little bonobo, goooooo!!!_
 >
-> _Quite the mandatory, hubris-fueled attitude one must adopt to eventually become a prolific webDepp - the ambitious zeal of a testosterone-infused silverback mountain gorilla, relentlessly striving to grasp the golden banana for refactoring QED so brilliantly that even  [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter) himself would blush enviously. Vulgo: aiming to become a bot no matter what. As you do. Being the apparent Cro-Mag that I am - purely by phenotype._
+> _Quite the mandatory, hubris-fueled attitude one must adopt to eventually become a prolific webDepp - the ambitious zeal of a testosterone-infused silverback mountain gorilla, relentlessly striving to grasp the golden banana for refactoring QED so brilliantly that even [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter) himself would blush enviously. Vulgo: aiming to become a bot no matter what. As you do. Being the apparent Cro-Mag that I am - purely by phenotype._
 >
 > _Well, might be implicitly disconcertingly unhinged. But rather cute, indeed.. so PROCEED, quitters never win, to cite the famously brilliant philosopher of our time, of course, Vince Lombardi._
 

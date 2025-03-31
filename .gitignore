@@ -23,6 +23,11 @@ dist-ssr
 *.sln
 *.sw?
 
+# backend
+# Ignore all files in the backend directory
+# except for the .env file
+# and the .gitignore file itself
+
 # mine
 _react*
 .env

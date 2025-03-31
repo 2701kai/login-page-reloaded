@@ -19,3 +19,5 @@
 <Link to="/about" className="text-cyan-400 hover:underline">
   About this project
 </Link>
+
+![alt text](./askTeacher.404.png)

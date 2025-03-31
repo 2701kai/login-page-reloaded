@@ -42,7 +42,7 @@ export default function MarkdownWithAudioAndImage() {
 
               const isMarkus = flatText.trim().toLowerCase() === "markus";
               const isHal = href.endsWith(".mp3");
-              const isImageLink = href.includes("404.png");
+              const isImageLink = href.includes("404");
 
               const handleClick = (e) => {
                 if (isMarkus || isHal || isImageLink) {
