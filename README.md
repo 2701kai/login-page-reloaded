@@ -151,3 +151,9 @@ moving on:
 ![alt text](image-2.png)
 
 ### deployed **[@vercel](https://hanne-gpt.vercel.app/)**
+
+---
+
+### Epilogue..
+
+![alt text](image-3.png)
