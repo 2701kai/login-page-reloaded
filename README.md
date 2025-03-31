@@ -100,7 +100,7 @@ created reloaded version full MERN, then
 gh repo create login-page-reloaded --public --source=. --remote=origin --push
 ```
 
-years later.. n still annoying CSP
+years later.. and still annoying CSS
 
 ### fonts working:
 
