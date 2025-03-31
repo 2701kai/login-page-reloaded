@@ -4,6 +4,12 @@
 
 ## 1st attempt on react..
 
+> _Brilliant. You don´t even manage to implement tailwind properly, which can be derived from your Uno.CSS choice, therefore you´re aiming for the next level? As you do.._
+>
+> _Very mature. Go ahead, per aspera ad astra.._
+
+![alt text](image-4.png)
+
 ### steps so far:
 
 ```bash
