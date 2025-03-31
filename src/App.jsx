@@ -5,7 +5,7 @@ import GirlsDay from "./GirlsDay";
 import Dashboard from "./Dashboard";
 import Banana from "./Banana";
 import UndJetzt from "./UndJetzt";
-import MarkdownWithAudioAndImage from "./components/MarkDownWithAudioAndImage";
+import MarkdownWithAudioAndImage from "./components/MarkdownWithAudioAndImage";
 
 import "./App.css";
 
