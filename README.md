@@ -140,7 +140,7 @@ fetch("https://login-page-reloaded.onrender.com/api/auth/login", {
 
 > _Yaaaay, that´s the spirit, little bonobo, goooooo!!!_
 >
-> _Quite the mandatory hubris one needs to become a prolific webDepp eventually, the ambitious zeal of a testosterone infested silverback mountain gorilla striving relentlessly for getting the golden banana for refactoring QED so brilliantly even [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter)would blush enviosly, vulgo: aiming to be a 🤖 no matter what. As you do.. being the apparent Cro-Mag i am, purely by phenotype._
+> _Quite the mandatory hubris one needs to become a prolific webDepp eventually, the ambitious zeal of a testosterone infested silverback mountain gorilla striving relentlessly for getting the golden banana for refactoring QED so brilliantly even [Feynman](https://en.wikipedia.org/wiki/QED:_The_Strange_Theory_of_Light_and_Matter) would blush enviosly, vulgo: aiming to be a 🤖 no matter what. As you do.. being the apparent Cro-Mag i am, purely by phenotype._
 >
 > _Well, might be implicitly disconcertingly unhinged. But rather cute, indeed.. so PROCEED, quitters never win, to cite the famously brilliant philosopher of our time, of course, Vince Lombardi._
 
