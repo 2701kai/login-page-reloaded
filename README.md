@@ -152,7 +152,7 @@ Whatever. Back to topic: Bug Fixing.Also see
 
 ## [BOOM! @vercel](https://lpr2.vercel.app)
 
-> well, that was easy..
+> _well, that was easy.._
 
 moving on:
 
