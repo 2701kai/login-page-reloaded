@@ -2,13 +2,12 @@ import express from "express";
 import jwt from "jsonwebtoken";
 import User from "../models/User.js";
 
-const router = express.Router();
+const authRouter = express.Router();
 
 // Register route
-router.post("/register", async (req, res) => {
+authRouter.post("/register", async (req, res) => {
   try {
     const { username, password } = req.body;
-
     // Check if user already exists
     const existingUser = await User.findOne({ username });
     if (existingUser) {
@@ -25,15 +24,14 @@ router.post("/register", async (req, res) => {
       process.env.JWT_SECRET || "your-secret-key",
       { expiresIn: "24h" }
     );
-
-    res.status(201).json({ token });
+    res.status(200).json({ token });
   } catch (error) {
     res.status(500).json({ message: "Server error", error: error.message });
   }
 });
 
 // Login route
-router.post("/login", async (req, res) => {
+authRouter.post("/login", async (req, res) => {
   try {
     const { username, password } = req.body;
 
@@ -62,4 +60,4 @@ router.post("/login", async (req, res) => {
   }
 });
 
-export default router;
+export default authRouter;
