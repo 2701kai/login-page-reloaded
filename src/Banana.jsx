@@ -397,7 +397,7 @@ export default function Banana() {
 
   return (
     <>
-      <h1>Moin, Johanna!</h1>
+      <h1>Moin, Mischa!</h1>
       <div className="aenne">
         <h2>Schön, dass Du hier bist.</h2>
         {showHint && (
